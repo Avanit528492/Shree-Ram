@@ -1,0 +1,1862 @@
+@charset "UTF-8";
+@keyframes arrowAnimate {
+  0% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes arrowAnimate1 {
+  0% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+#booking .wp-travel-booking__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #eee;
+}
+#booking .wp-travel-booking__header h3 {
+  font-size: 16px;
+  color: #222;
+  flex: 1;
+  margin: 0;
+}
+#booking .wp-travel-booking__header button {
+  border: 1px solid #e92929;
+  background: transparent;
+  color: #e92929;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+#booking .wp-travel-booking__header button svg {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+#booking .wp-travel-booking__header button svg path {
+  fill: #e92929;
+}
+
+.wp-travel-booking__panel-bottom {
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  left: 0;
+  z-index: 11;
+}
+
+.wp-travel-booking__panel-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wp-travel-booking__panel-bottom .left-info p:last-child {
+  margin-bottom: 0;
+}
+.wp-travel-booking__panel-bottom .right-info {
+  text-align: right;
+}
+.wp-travel-booking__panel-bottom .right-info p {
+  font-size: 20px;
+}
+@media (min-width: 991px) {
+  .wp-travel-booking__panel-bottom .left-info,
+.wp-travel-booking__panel-bottom .right-info {
+    display: inline-flex;
+    align-items: center;
+  }
+  .wp-travel-booking__panel-bottom .left-info p,
+.wp-travel-booking__panel-bottom .right-info p {
+    margin-bottom: 0;
+  }
+  .wp-travel-booking__panel-bottom .left-info p:first-child {
+    margin-right: 1rem;
+  }
+  .wp-travel-booking__panel-bottom .right-info .wp-travel-book {
+    margin-left: 1rem;
+  }
+}
+
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper {
+  display: none;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pricing-name {
+  display: none;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__selected-time {
+  margin-bottom: 1rem;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__selected-time,
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper {
+  display: block;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__selected-time h4,
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper h4 {
+  float: left;
+  display: block;
+  font-size: 14px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper .wp-travel-booking__trip-option-list {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper .wp-travel-booking__trip-option-list li {
+  display: initial;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper .wp-travel-booking__trip-option-list li .text-left {
+  margin-right: 0;
+  display: initial;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper .wp-travel-booking__trip-option-list li .text-left > strong {
+  margin-right: 0;
+  display: block;
+  text-align: right;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper .wp-travel-booking__trip-option-list li .text-left .group-discount-button {
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper .wp-travel-booking__trip-option-list li .text-left .group-discount-button:hover span {
+  display: none;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper .wp-travel-booking__trip-option-list li .text-right {
+  display: initial;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper .wp-travel-booking__trip-option-list li .text-right .item-price {
+  margin-right: 0;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pax-selector-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner {
+  display: initial;
+}
+@media (max-width: 991px) {
+  #booking.wp-travel-list-view .wp-travel-booking__pricing-wrapper {
+    display: block;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+}
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper {
+  margin-bottom: 15px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .text-left strong {
+  font-size: 15px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .text-left del {
+  color: #777;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 250px;
+  margin-top: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table::before, #booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table::after {
+  content: "";
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translateY(-100%);
+}
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table::before {
+  border-bottom-color: #0000005c;
+  top: -0.7px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  display: table;
+  margin: 0;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table table .discount-tbody th,
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table table .discount-tbody td,
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table table .discount-thead th,
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table table .discount-thead td {
+  padding: 0.25em 0.5em;
+  font-size: 14px;
+  text-align: center;
+  color: #404040;
+  border: 1px solid #eee;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table table .discount-tbody tr:first-child th:last-child,
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table table .discount-thead tr:first-child th:last-child {
+  border-left: 1px solid #eee;
+}
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table table .discount-tbody tr:last-child td,
+#booking.wp-travel-list-view .wp-travel-booking__pax-selector-wrapper .discount-table table .discount-thead tr:last-child td {
+  border: 1px solid #eee;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .text-right {
+  display: flex;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .text-right .item-price {
+  margin-right: 1em;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .text-right .item-price > span {
+  font-size: 16px;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .wp-travel-booking__trip-option-list .text-right .item-price {
+    margin-right: 0;
+  }
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .text-right .price {
+  margin-top: 10px;
+  font-size: 20px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .group-discount-button {
+  font-size: 12px;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .group-discount-button > span {
+  display: none;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .group-discount-button svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5em;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .group-discount-button svg path {
+  fill: red;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .group-discount-button .discount-table {
+  top: 90%;
+  opacity: 0;
+  visibility: hidden;
+  animation: arrowAnimate1 1s ease infinite;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .group-discount-button:hover .discount-table {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .item-price {
+  font-weight: 500;
+  display: inline-block;
+  font-size: 12px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .item-price > span {
+  font-weight: bold;
+  font-size: 18px;
+  color: #444;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  align-items: flex-start;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .qty-spinner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .qty-spinner em {
+  position: absolute;
+  width: 120px;
+  font-size: 12px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  border: 1px solid #e92929;
+  background-color: rgba(233, 41, 41, 0.2);
+  color: #e92929;
+  border-radius: 3px;
+  margin-top: -7px;
+  z-index: 1;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .qty-spinner em::after, #booking.wp-travel-list-view .wp-travel-booking__trip-option-list .qty-spinner em::before {
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ffc8c8;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .qty-spinner span {
+  display: inline-block;
+  min-width: 30px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: none;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .qty-spinner button {
+  display: inline-flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  margin: 0;
+  padding: 0 !important;
+  font-size: 16px;
+  background: #b3b3b3;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .qty-spinner button:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .qty-spinner button:nth-child(3) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-option-list .price {
+  font-weight: bold;
+}
+#booking.wp-travel-list-view .wp-travel-booking__selected-time h4 {
+  display: none;
+}
+#booking.wp-travel-list-view .wp-travel-booking__selected-time button {
+  font-size: 11px;
+  font-weight: bold;
+  border: 1px solid #444;
+  background-color: rgba(68, 68, 68, 0.2);
+  color: #444;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__selected-time button:disabled {
+  opacity: 1;
+  background-color: #444;
+  color: #fff;
+}
+#booking.wp-travel-list-view .wp-travel-booking__selected-time button:last-child {
+  margin-right: 0;
+}
+@media (max-width: 991px) {
+  #booking.wp-travel-list-view .wp-travel-booking__selected-time {
+    text-align: right;
+  }
+}
+#booking.wp-travel-list-view .date-time-wrapper {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#booking.wp-travel-list-view .date-time-wrapper .start-date,
+#booking.wp-travel-list-view .date-time-wrapper .end-date {
+  margin-bottom: 0.5em;
+  display: block;
+}
+#booking.wp-travel-list-view .date-time-wrapper .start-date span,
+#booking.wp-travel-list-view .date-time-wrapper .end-date span {
+  font-weight: 700;
+  color: #000;
+}
+#booking.wp-travel-list-view .item-price {
+  font-weight: 500;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 1em;
+}
+#booking.wp-travel-list-view .item-price del {
+  opacity: 0.5;
+  margin-right: 1em;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .item-price del {
+    margin-right: 0.5em;
+  }
+}
+#booking.wp-travel-list-view .item-price > span {
+  font-weight: bold;
+  font-size: 12px;
+  color: #444;
+}
+#booking.wp-travel-list-view .text-left {
+  flex: 1;
+  margin-right: 0.5em;
+  display: flex;
+  align-items: center;
+}
+#booking.wp-travel-list-view .text-left p a {
+  margin-left: 0.5em;
+}
+#booking.wp-travel-list-view .text-left > strong {
+  margin-right: 1em;
+}
+#booking.wp-travel-list-view .text-left .info-container {
+  position: relative;
+}
+#booking.wp-travel-list-view .text-left .info-container .info {
+  display: block;
+}
+#booking.wp-travel-list-view .text-left .info-container .info-icon {
+  margin-left: 0.5em;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+#booking.wp-travel-list-view .text-left .info-container .info-icon svg {
+  color: #999;
+}
+#booking.wp-travel-list-view .text-left .info-container .infoBox {
+  position: absolute;
+  top: 30px;
+  right: -118px;
+  border: 1px solid #b3b3b3;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1;
+  width: 250px;
+  opacity: 0;
+  visibility: hidden;
+  animation: arrowAnimate1 1s ease infinite;
+}
+#booking.wp-travel-list-view .text-left .info-container .infoBox::before {
+  content: "";
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #b3b3b3;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#booking.wp-travel-list-view .text-left .info-container .infoBox::after {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #d3e9ff;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#booking.wp-travel-list-view .text-left .info-container .infoBox .desc {
+  margin-bottom: 0;
+}
+#booking.wp-travel-list-view .text-left .info-container .info:hover .info-icon svg {
+  color: #222;
+}
+#booking.wp-travel-list-view .text-left .info-container .info:hover > .infoBox {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+}
+#booking.wp-travel-list-view .text-left .group-discount-button {
+  cursor: pointer;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+  position: relative;
+}
+#booking.wp-travel-list-view .text-left .group-discount-button:hover {
+  color: red;
+}
+#booking.wp-travel-list-view .text-left .group-discount-button svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.25em;
+}
+#booking.wp-travel-list-view .text-left .group-discount-button svg path {
+  fill: red;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper h4 {
+  text-align: left;
+  font-size: 14px;
+  background: #f2f3f4;
+  padding: 5px 10px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li {
+  padding: 0.3em 0.5em;
+  font-size: 15px;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px 0;
+  padding-left: 1.2em;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .discount-table {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 250px;
+  margin-top: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .discount-table::before, #booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .discount-table::after {
+  content: "";
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translateY(-100%);
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .discount-table::before {
+  border-bottom-color: #999;
+  top: -0.7px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .discount-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  display: table;
+  margin: 0;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .discount-table table thead tr:first-child th:last-child {
+  border-left: 1px solid #eee;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .discount-table table tbody tr td:first-child {
+  background: rgba(0, 0, 0, 0.1);
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .discount-table table tbody tr:last-child td {
+  border-bottom: 0;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .discount-table table th,
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .discount-table table td {
+  border-bottom: 1px solid #eee;
+  padding: 0.25em 0.5em;
+  font-size: 14px;
+  text-align: center;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li > strong {
+  margin-right: 1em;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .pricing-area {
+  display: flex;
+  align-items: center;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em {
+  position: absolute;
+  width: 120px;
+  font-size: 12px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  border: 1px solid #e92929;
+  background-color: rgba(233, 41, 41, 0.2);
+  color: #e92929;
+  border-radius: 3px;
+  margin-top: -7px;
+  z-index: 1;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em {
+    margin-top: auto;
+    margin-bottom: -7px;
+    top: auto;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+  }
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::before, #booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::after {
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ffc8c8;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::before, #booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::after {
+    top: auto;
+    bottom: 100%;
+    border-top: 0;
+    border-bottom: 5px solid #ffc8c8;
+  }
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::before {
+  border-top-color: #e92929;
+  border-bottom-color: #e92929;
+  margin-top: 1px;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::before {
+    margin-bottom: 1px;
+  }
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner button {
+  display: inline-flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 13px;
+  background: #b3b3b3;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner button:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner button:nth-child(3) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner span {
+  display: inline-block;
+  min-width: 30px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: none;
+}
+#booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .price {
+  min-width: 80px;
+  text-align: right;
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .text-right .price {
+    width: unset;
+    padding-left: 10px;
+  }
+}
+#booking.wp-travel-list-view .wp-travel-booking__selected-time button:nth-child(2) {
+  margin-bottom: 0.5rem;
+}
+#booking.wp-travel-list-view .wp-travel-booking__selected-time button:disabled:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  margin-right: 0.3em;
+}
+#booking.wp-travel-list-view .wp-travel-booking__selected-time button:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+#booking.wp-travel-list-view .wp-travel-booking__selected-time button + button {
+  margin-left: 0.5rem;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates {
+  width: 100%;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table ul,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table ul,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table ul,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .thead-table th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .thead-table th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .thead-table th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .thead-table th {
+  background: #c5cacd;
+  background: #f2f3f4;
+  font-weight: bold;
+  border: none;
+  font-size: 14px;
+  text-align: right;
+  color: #000;
+  line-height: 1.4;
+  text-transform: uppercase;
+  padding: 10px;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .thead-table th:first-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .thead-table th:first-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .thead-table th:first-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .thead-table th:first-child {
+  border-top-left-radius: 3px;
+  display: flex;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .thead-table th:nth-child(2),
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .thead-table th:nth-child(2),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .thead-table th:nth-child(2),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .thead-table th:nth-child(2) {
+  text-align: left;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .thead-table th:last-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .thead-table th:last-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .thead-table th:last-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .thead-table th:last-child {
+  border-top-right-radius: 3px;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table {
+  background: #fbfafa;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table tr,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table tr,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table tr,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table tr {
+  border-bottom: 1px solid #0000000a;
+  vertical-align: top;
+  position: relative;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table tr th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table tr td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table tr th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table tr td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table tr th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table tr td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table tr th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table tr td {
+  color: #404040;
+  text-align: center;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table tr td:not(:nth-child(2)),
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table tr td:not(:nth-child(2)),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table tr td:not(:nth-child(2)),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table tr td:not(:nth-child(2)) {
+  vertical-align: top;
+  text-align: right;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table tr td:nth-child(1) div,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table tr td:nth-child(1) div,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table tr td:nth-child(1) div,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table tr td:nth-child(1) div {
+  margin-bottom: 1em;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table tr td:nth-child(1) div,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table tr td:nth-child(1) div,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table tr td:nth-child(1) div,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table tr td:nth-child(1) div {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table tr td:nth-child(3),
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table tr td:nth-child(3),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table tr td:nth-child(3),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table tr td:nth-child(3) {
+    width: 170px;
+  }
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table tr td:nth-child(2),
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table tr td:nth-child(2),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table tr td:nth-child(2),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table tr td:nth-child(2) {
+    width: 460px;
+  }
+}
+@media (min-width: 1200px) {
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table tr td:nth-child(3),
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table tr td:nth-child(3),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table tr td:nth-child(3),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table tr td:nth-child(3) {
+    width: 200px;
+  }
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table tr.selected,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table tr.selected,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table tr.selected,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table tr.selected {
+  background: #f9f9f9;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 250px;
+  margin-top: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table::before, #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table::after,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table::before,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table::after,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table::before,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table::after,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table::before,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table::after {
+  content: "";
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translateY(-100%);
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table::before,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table::before,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table::before,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table::before {
+  border-bottom-color: #0000005c;
+  top: -0.7px;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  display: table;
+  margin: 0;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table table .discount-tbody th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table table .discount-tbody td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table table .discount-thead th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table table .discount-thead td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table table .discount-tbody th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table table .discount-tbody td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table table .discount-thead th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table table .discount-thead td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table table .discount-tbody th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table table .discount-tbody td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table table .discount-thead th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table table .discount-thead td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table table .discount-tbody th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table table .discount-tbody td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table table .discount-thead th,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table table .discount-thead td {
+  padding: 0.25em 0.5em;
+  font-size: 14px;
+  text-align: center;
+  color: #404040;
+  border: 1px solid #eee;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table table .discount-tbody tr:first-child th:last-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table table .discount-thead tr:first-child th:last-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table table .discount-tbody tr:first-child th:last-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table table .discount-thead tr:first-child th:last-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table table .discount-tbody tr:first-child th:last-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table table .discount-thead tr:first-child th:last-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table table .discount-tbody tr:first-child th:last-child,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table table .discount-thead tr:first-child th:last-child {
+  border-left: 1px solid #eee;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table table .discount-tbody tr:last-child td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .discount-table table .discount-thead tr:last-child td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table table .discount-tbody tr:last-child td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .discount-table table .discount-thead tr:last-child td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table table .discount-tbody tr:last-child td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .discount-table table .discount-thead tr:last-child td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table table .discount-tbody tr:last-child td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .discount-table table .discount-thead tr:last-child td {
+  border: 1px solid #eee;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .components-base-control__field,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .components-base-control__field,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .components-base-control__field,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .components-base-control__field {
+  margin-bottom: 0;
+  display: flex;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .components-base-control__field .components-checkbox-control__input,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .components-base-control__field .components-checkbox-control__input,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .components-base-control__field .components-checkbox-control__input,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .components-base-control__field .components-checkbox-control__input {
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (min-width: 991px) {
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .components-base-control__field .components-checkbox-control__input,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .components-base-control__field .components-checkbox-control__input,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .components-base-control__field .components-checkbox-control__input,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .components-base-control__field .components-checkbox-control__input {
+    width: 20px;
+    height: 20px;
+  }
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .components-base-control__field .components-checkbox-control__checked,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .components-base-control__field .components-checkbox-control__checked,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .components-base-control__field .components-checkbox-control__checked,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .components-base-control__field .components-checkbox-control__checked {
+  display: none;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .components-base-control__field label,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .components-base-control__field label,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .components-base-control__field label,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .components-base-control__field label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #444;
+  margin-left: 0.5em;
+  text-align: left;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .components-base-control__field label,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .components-base-control__field label,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .components-base-control__field label,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .components-base-control__field label {
+    font-size: 13px;
+    text-align: right;
+  }
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .components-base-control__field .components-checkbox-control__input,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .components-base-control__field .components-checkbox-control__input,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .components-base-control__field .components-checkbox-control__input,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .components-base-control__field .components-checkbox-control__input {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 991px) {
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .thead-table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .thead-table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .thead-table,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .thead-table {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table td,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table td {
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table td:nth-child(2),
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table td:nth-child(3) .wp-travel-booking__selected-time,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table td:nth-child(2),
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table td:nth-child(3) .wp-travel-booking__selected-time,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table td:nth-child(2),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table td:nth-child(3) .wp-travel-booking__selected-time,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table td:nth-child(2),
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table td:nth-child(3) .wp-travel-booking__selected-time {
+    display: none;
+  }
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .tbody-table td::before,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .tbody-table td::before,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .tbody-table td::before,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .tbody-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .wp-travel-booking__trip-option-list li,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .wp-travel-booking__trip-option-list li,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .wp-travel-booking__trip-option-list li,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .wp-travel-booking__trip-option-list li {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .wp-travel-booking__trip-option-list .group-discount-button,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .wp-travel-booking__trip-option-list .group-discount-button,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .wp-travel-booking__trip-option-list .group-discount-button,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .wp-travel-booking__trip-option-list .group-discount-button {
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .wp-travel-booking__trip-option-list .wp-travel-booking__selected-time,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .wp-travel-booking__trip-option-list .wp-travel-booking__selected-time,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .wp-travel-booking__trip-option-list .wp-travel-booking__selected-time,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .wp-travel-booking__trip-option-list .wp-travel-booking__selected-time {
+    text-align: right;
+  }
+}
+@media (min-width: 576px) {
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .wp-travel-booking__trip-option-list .text-right,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .wp-travel-booking__trip-option-list .text-right,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .wp-travel-booking__trip-option-list .text-right,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .wp-travel-booking__trip-option-list .text-right {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper .wptravel-recurring-table .wp-travel-booking__trip-option-list .text-right .item-price,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wptravel-recurring-table-wrapper table .wp-travel-booking__trip-option-list .text-right .item-price,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .wptravel-recurring-table .wp-travel-booking__trip-option-list .text-right .item-price,
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened table .wp-travel-booking__trip-option-list .text-right .item-price {
+    margin: 0.3em;
+    margin-right: 1em;
+  }
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wp-travel-recurring-dates-nav-btns {
+  margin-top: 15px;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wp-travel-recurring-dates-nav-btns td {
+  border: none;
+  padding: 15px 0;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wp-travel-recurring-dates-nav-btns .prev {
+  float: left;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wp-travel-recurring-dates-nav-btns .show-more,
+#booking.wp-travel-list-view .wptravel-recurring-dates .wp-travel-recurring-dates-nav-btns .next {
+  float: right;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened {
+    margin-bottom: 30px;
+  }
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .listing {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.2em;
+  margin-left: 0;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .listing li {
+  padding: 5px 10px;
+  background: #fbfafa;
+  display: flex;
+  align-items: center;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .listing li:nth-child(1), #booking.wp-travel-list-view .wptravel-recurring-dates .listing li:nth-child(2), #booking.wp-travel-list-view .wptravel-recurring-dates .listing li:nth-child(3) {
+  background-color: #dcdcdc;
+  color: #404040;
+  font-weight: bold;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body {
+  margin-bottom: 15px;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body .components-button {
+  padding: 15px 10px !important;
+  display: flex !important;
+  justify-content: space-between;
+  border-radius: 3px !important;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-radio-control__option {
+  margin-bottom: 20px;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-button {
+  background: rgba(194, 201, 208, 0.2);
+  color: #333;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 10px !important;
+  border: 1px solid #e5e5e5 !important;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-bottom: 0;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-button span {
+  float: right;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-panel__body.is-opened .components-button {
+  background: #c2c9d0;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wp-travel-recurring-dates-nav-btns button {
+  margin-right: 10px;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .wp-travel-booking__pax-selector-wrapper h4 {
+  display: none;
+}
+#booking.wp-travel-list-view .wptravel-recurring-dates .components-disabled {
+  opacity: 0.5;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-list-view .discount-table table thead {
+    position: initial;
+  }
+  #booking.wp-travel-list-view .discount-table table td {
+    display: table-cell !important;
+  }
+}
+
+#booking.wp-travel-calendar-view {
+  background-color: #fff;
+  padding: 0 1em;
+}
+#booking.wp-travel-calendar-view .tooltip {
+  position: relative;
+}
+#booking.wp-travel-calendar-view .tooltip > span {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  display: none;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__notice {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 1em 1em 1em 2.75em;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__notice svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 1em;
+  top: 0.95em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__notice p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__notice.is-info {
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__notice.is-info svg path {
+  fill: #007bff;
+}
+#booking.wp-travel-calendar-view #loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#booking.wp-travel-calendar-view #loader span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 10px solid #3399ff;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-radius: 50%;
+  animation: loader 1s linear infinite;
+}
+#booking.wp-travel-calendar-view button {
+  padding: 0.75em 1em;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+#booking.wp-travel-calendar-view button:hover {
+  opacity: 0.7;
+}
+#booking.wp-travel-calendar-view button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+#booking.wp-travel-calendar-view .react-datepicker__day.react-datepicker__day--keyboard-selected:not(.react-datepicker__day--today) {
+  background: transparent !important;
+  color: #000 !important;
+}
+#booking.wp-travel-calendar-view .react-datepicker__day.react-datepicker__day--keyboard-selected.react-datepicker__day--disabled {
+  color: #ccc !important;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper {
+  margin-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker-wrapper {
+  margin-right: 1em;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker-wrapper {
+    flex: unset;
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker-wrapper .react-datepicker__input-container .wp-travel-date-picker-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0 0 1em;
+  overflow: hidden;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker-wrapper .react-datepicker__input-container .wp-travel-date-picker-btn span {
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0.75em 1em;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker-wrapper .react-datepicker__input-container .wp-travel-date-picker-btn span svg {
+  width: 15px;
+  height: 15px;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker-wrapper .react-datepicker__input-container .wp-travel-date-picker-btn span svg path {
+  fill: #fff;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper[data-placement^=top] .react-datepicker .react-datepicker__triangle::before {
+  border-top-color: #636363;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker {
+  border-color: #636363;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__triangle {
+  border-bottom-color: #636363;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__navigation {
+  padding: 0 !important;
+  width: 20px;
+  height: 20px;
+  text-indent: 0;
+  background: none;
+  top: 16px;
+  color: #fff;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__navigation::before {
+  font: normal 20px/1 "Font Awesome 5 Free";
+  font-weight: 900;
+  display: block;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__navigation--next::before {
+  content: "";
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__navigation--previous::before {
+  content: "";
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__header {
+  background-color: #636363;
+  padding: 8px 10px;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__header .react-datepicker__current-month {
+  color: #fff;
+  margin: 0.5em 0em 1em;
+  font-size: 12px;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__header .react-datepicker__header__dropdown [class*=react-datepicker] select {
+  border: 1px solid #fff;
+  background: none !important;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.5em 1em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__header .react-datepicker__header__dropdown [class*=react-datepicker] select option {
+  color: #5b5b5b;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__header .react-datepicker__day-names {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__header .react-datepicker__day-names .react-datepicker__day-name {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 12px;
+  width: 25px;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month {
+  padding: 8px 10px;
+  margin: 0;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week > div {
+  border-radius: 50%;
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper .react-datepicker__tab-loop .react-datepicker-popper .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__week .react-datepicker__day--keyboard-selected {
+  background-color: #636363;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper p {
+  font-size: 14px;
+  color: #3399ff;
+  display: inline-block;
+  margin: 0;
+  padding: 0.5em;
+  border: 1px solid #3399ff;
+  background-color: rgba(51, 153, 255, 0.2);
+  border-radius: 4px;
+  position: relative;
+}
+@media (min-width: 576px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper p {
+    animation: arrowAnimate 1s ease infinite;
+  }
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper p {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper p::before, #booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper p::after {
+  content: "";
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #d3e9ff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper p::before, #booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper p::after {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #d3e9ff;
+    left: 1em;
+    top: 0;
+    transform: translateY(-100%);
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper p::before {
+  border-right: 8px solid #3399ff;
+  left: -1px;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__datepicker-wrapper p::before {
+    top: -1px;
+    left: 1em;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #3399ff;
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper {
+  background-color: #f4f4f8;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 1em 1.5em;
+  position: relative;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pricing-name {
+  margin-bottom: 2em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pricing-name h4 {
+  margin-bottom: 1em;
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pricing-name button {
+  border: 1px solid #999;
+  background-color: #fff;
+  color: #444;
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__pricing-name button.active {
+  border-color: #3399ff;
+  color: #3399ff;
+  background-color: rgba(51, 153, 255, 0.2);
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__selected-time {
+  margin-bottom: 2em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__selected-time h4 {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__selected-time button {
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #444;
+  background-color: rgba(68, 68, 68, 0.2);
+  color: #444;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__selected-time button:disabled {
+  opacity: 1 !important;
+  background-color: #444;
+  color: #fff;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li {
+  padding: 0.5em 1em;
+  background-color: #fff;
+  margin-bottom: 1em;
+  font-size: 15px;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .discount-table {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 250px;
+  margin-top: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .discount-table::before, #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .discount-table::after {
+  content: "";
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  transform: translateY(-100%);
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .discount-table::before {
+  border-bottom-color: #999;
+  top: -0.7px;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .discount-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  display: table;
+  margin: 0;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .discount-table table thead tr:first-child th:last-child {
+  border-left: 1px solid #eee;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .discount-table table tbody tr:last-child td {
+  border-bottom: 0;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .discount-table table th, #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .discount-table table td {
+  border-bottom: 1px solid #eee;
+  padding: 0.25em 0.5em;
+  font-size: 14px;
+  text-align: center;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li > strong {
+  margin-right: 1em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .item-price {
+  font-weight: 500;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 1em;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .item-price {
+    margin-right: 0;
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .item-price del {
+  opacity: 0.5;
+  margin-right: 1em;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .item-price del {
+    margin-right: 0.5em;
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .item-price > span {
+  font-weight: bold;
+  font-size: 18px;
+  color: #444;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left {
+  flex: 1;
+  margin-right: 0.5em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left p a {
+  margin-left: 0.5em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left > strong {
+  margin-right: 1em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left .group-discount-button {
+  cursor: pointer;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left .group-discount-button .discount-table {
+  display: none;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left .group-discount-button:hover > span {
+  color: red;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left .group-discount-button:hover .discount-table {
+  display: block;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left .group-discount-button svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.25em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left .group-discount-button svg path {
+  fill: red;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left .infoBox {
+  text-align: left;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-left .info-icon {
+  display: none;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .pricing-area {
+  display: flex;
+  align-items: center;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em {
+  position: absolute;
+  width: 120px;
+  font-size: 12px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -100%);
+  text-align: center;
+  border: 1px solid #e92929;
+  background-color: rgba(233, 41, 41, 0.2);
+  color: #e92929;
+  border-radius: 3px;
+  margin-top: -7px;
+  z-index: 1;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em {
+    margin-top: auto;
+    margin-bottom: -7px;
+    top: auto;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::before, #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::after {
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ffc8c8;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::before, #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::after {
+    top: auto;
+    bottom: 100%;
+    border-top: 0;
+    border-bottom: 5px solid #ffc8c8;
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::before {
+  border-top-color: #e92929;
+  border-bottom-color: #e92929;
+  margin-top: 1px;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner em::before {
+    margin-bottom: 1px;
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner button {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  margin: 0;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner button:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner button:nth-child(3) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .qty-spinner span {
+  display: inline-block;
+  min-width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: none;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .price {
+  min-width: 80px;
+  text-align: right;
+  font-weight: bold;
+  padding-left: 15px;
+}
+@media (max-width: 575px) {
+  #booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-option-list li .text-right .price {
+    width: unset;
+    padding-left: 10px;
+  }
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__selector-wrapper {
+  margin-bottom: 2em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__selector-wrapper h4 {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-extras-wrapper {
+  margin-bottom: 0;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li {
+  position: relative;
+  padding-left: 1.5em;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .checkbox {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1.5px solid #3399ff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .checkbox.checked {
+  background-color: #3399ff;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .checkbox.checked svg.tick {
+  display: block;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .checkbox svg {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-extras-wrapper .wp-travel-booking__trip-option-list li .checkbox svg path {
+  fill: #fff;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-extras-wrapper p {
+  font-size: 12px;
+  color: #777;
+  margin: 0;
+}
+#booking.wp-travel-calendar-view .wp-travel-booking__pricing-wrapper .wp-travel-booking__trip-extras-wrapper a {
+  display: inline-block;
+  text-align: right;
+}
+
+.wptravel-loader {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  z-index: 111;
+}
+.wptravel-loader div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #f83531;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.wptravel-loader div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.wptravel-loader div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.wptravel-loader div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.wptravel-loader div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+.wptravel-loading {
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+.wp-travel-booking__pricing-wrapper.wptravel-loading .wptravel-loader {
+  top: calc( 50% - 40px );
+}
+.wp-travel-booking__pricing-wrapper.wptravel-loading:before {
+  width: 100%;
+  height: 100%;
+  content: " ";
+  display: block;
+  position: absolute;
+  z-index: 11;
+  background: linear-gradient(110deg, #fbfafa99 8%, #fbfafa99 18%, #fbfafaab 33%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+}
+.wp-travel-booking__pricing-wrapper.wptravel-loading:before .person-box {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
